@@ -39,11 +39,9 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
-
+/**********************************
 Modules - reusable parts of our design
-
--------------------------------- */
+*******************************/
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -57,11 +55,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
-
+/******************************
 Main components 
-
--------------------------------- */
+*****************************/
 header {
   height: 200px;
   line-height: 200px;
@@ -486,7 +482,7 @@ header h1 {
 }
 
 /****************
-** FONTES *******
+FONTES
 *****************/
 @font-face {
     font-family: "kelson_sans";
