@@ -8,14 +8,13 @@
         <meta name="author" content="Bruno Teixeira">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- FONTS -->
+        <link rel="stylesheet" type="text/css" href="fonts">
+
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
-        <!-- FONTS -->
-        <link rel="stylesheet" type="text/css" href="fonts">
-
 
         <!-- JavaScripts -->
         <script src="js/vendor/jquery-2.1.4.min.js"></script>
@@ -24,25 +23,132 @@
         <script src="js/script.js"></script>
 	</head>
 	<body>
-            <div id="presentation">
-                <div class="overlay">
+            <div id="intro">
+                <div class="overlay"></div>
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="profile img">
+                </div>
+                <div class="text">
+                    <div class="title">
+                        BRUNO TEIXEIRA
+                    </div>
+                    <div class="subtitle">
+                    Web Developer, Porto, Portugal
+                    </div>
                 </div>
             </div>
 
             <div id="header">
-           
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <ul class="nav nav-bar">
+                            <li>
+                                <a href="">
+                                    <span>Sobre mim</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Capacidades</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Experiência</span>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </nav>
             </div>
-
             <div id="content">
-                    <div class="about_me">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="about_me" class="content">
+                                <div class="section-header">
+                                    <div class="section-icon">
+                                        <img src="img/aboutme.svg" alt="about me img">
+                                    </div>
+                                    <div class="section-title">
+                                        Sobre mim
+                                    </div>
+                                </div>
+                                <div class="section-text">
+                                    Considero-me uma pessoa alegre, calma e dedicada tanto ao trabalho como às pessoas. Procuro sempre apoiar o bom ambiente, pois considero que este é um factor fulcral ao bom desempenho pessoal. Considero ter capacidade crítica e inovadora, apreciando novos desafios e tecnologias. </br></br>
+
+                                    Profundo adepto de métodos de desenvolvimento ágeis, procuro sempre definir objectivos e prazos realistas. Procuro desenvolver as minhas competências, principalmente na área de desenvolvimento web, utilizando como recursos tecnologias recentes e inovadoras.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="extra_info" class="content">
+                                        <div class="section-header">
+                                            <div class="section-icon">
+                                                <img src="img/otherinfo.svg" alt="about me img">
+                                            </div>
+                                            <div class="section-title">
+                                                Outras informações
+                                            </div>
+                                        </div>
+                                        <div class="section-text">
+                                            <div class="highlight">Telemóvel:</div> 913976257 </br>
+                                            <div class="highlight">LinkedIn:</div> <a href="https://www.linkedin.com/in/bmfteixeira">bmfteixeira</a> </br>
+                                            <div class="highlight">E-mail:</div> brunot.teixeira5@gmail.com </br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="hoobies" class="content">
+                                        <div class="section-header">
+                                            <div class="section-icon">
+                                                <img src="img/hoobies.svg" alt="about me img">
+                                            </div>
+                                            <div class="section-title">
+                                                Outros interesses
+                                            </div>
+                                        </div>
+                                        <div class="section-text">
+                                            <div class="interess-gallery">
+                                                <img class="think" src="img/light.svg"  data-toggle="tooltip" title="Inovar !">
+                                                <img class="learn" src="img/new_tec.svg"  data-toggle="tooltip" title="Explorar novas tecnologias !">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill_set">
+                    <div id="skill_set">
                     </div>
-                    <div class="experience">
+                    <div id="scholl_set">
                     </div>
-           </div>
+                    <div id="experience">
+                    </div>
+                    <div id="portfolio">
+                    </div>
+                </div>
+            </div>
 
            <div id="footer">
            </div>
 	</body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+
+    $(".think").on("mouseover", function(){
+        this.src = "img/light_up.svg";
+    });
+
+     $(".think").on("mouseleave", function(){
+        this.src = "img/light.svg";
+    });
+</script>
