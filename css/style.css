@@ -115,7 +115,7 @@ html, body
 *	intro
 ***********************************/
 #intro {
-	height: 60%;
+	height: 600px;
 	background: url("../img/bg.jpg") no-repeat bottom center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -135,7 +135,7 @@ html, body
 
 #intro .profile {
     position: absolute;
-    top: 30%;
+    top: 200px;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 250px;
@@ -149,7 +149,7 @@ html, body
 
 #intro .text {
     position: absolute;
-    bottom: 20%;
+    bottom: 110px;
     width: 100%;
     text-align: center;
 }
