@@ -105,7 +105,7 @@ body > .container > .row > .col-md-12 {
 **********************************/
 
 .personal_intro {
-    padding: 20px;
+    padding: 25px;
     background-color: white;
     margin-top: 40px;
 }
@@ -235,24 +235,66 @@ body > .container > .row > .col-md-12 {
     color: #BF5F45 !important;
 }
 /*********************************
-* journey
+* my_perks
 **********************************/
-
-.journey {
-    padding: 20px;
-    background-color: white;
-    margin-top: 40px;
-}
-
-/*********************************
-* abilities
-**********************************/
-
-.abilities {
-    padding: 20px;
+.my_perks {
+    padding: 25px;
     background-color: white;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.cron_elem {
+    padding: 10px;
+    border-bottom: 1px solid #D1E8F7;
+}
+
+.cron_elem:last-child {
+    border-bottom: none;
+}
+
+.cron_elem .title {
+    font-family: "open_sanssemibold";
+    font-size: 14px;
+    text-align: left;
+}
+
+.cron_elem .description {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: "open_sansregular"; 
+}
+
+.professional .cron_elem .description,
+.studies .cron_elem .description {
+    color:#D6694B;
+}
+
+.exp  .cron_elem .title {
+    color:#D6694B;
+}
+
+.exp  .cron_elem .title:hover a{
+    color: #BF5F45 !important;;
+}
+
+
+.cron_elem .time {
+    font-size: 12px;
+}
+
+.abilities {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .professional {
+        margin-top: 40px;
+    }
+
+    .exp {
+        margin-top: 40px;
+    }
 }
 
 /*********************************
