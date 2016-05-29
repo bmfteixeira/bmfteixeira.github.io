@@ -36,7 +36,7 @@
                             <div class="age">21 anos</div>
                             <div class="role">Full Stack Web Developer</div>
 
-                            <button class="btn dwn-cv hidden420 btn-primary">Download CV</button>
+                            <button class="btn dwn-cv hidden420 btn-primary" onclick="download_cv()">Download CV</button>
                         </div>
                     </div>
                         <button class="btn dwn-cv show420 btn-primary">Download CV</button>
@@ -63,6 +63,11 @@
                         
                             <div class="contacts col-md-12 col-sm-6 col-xs-12">
                                 <div class="section_title">Contactos</div>
+                                <div class="section_content">
+                                    <p><label class="content_master tele">Telémovel:</label>913976257</p>
+                                    <p><label class="content_master mail">E-mail:</label>brunot.teixeira5@gmail.com</p>
+                                    <p><label class="content_master linkedin"><a href="https://www.linkedin.com/in/bmfteixeira">LinkedIn</a></label></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,35 +101,6 @@
     {
         $('[data-toggle="tooltip"]').tooltip(); 
         recalculate_personalInfo_height();
-
-        jQuery('img.svg').each(function(){
-            var $img = jQuery(this);
-            var imgID = $img.attr('id');
-            var imgClass = $img.attr('class');
-            var imgURL = $img.attr('src');
-
-            jQuery.get(imgURL, function(data) {
-                // Get the SVG tag, ignore the rest
-                var $svg = jQuery(data).find('svg');
-
-                // Add replaced image's ID to the new SVG
-                if(typeof imgID !== 'undefined') {
-                    $svg = $svg.attr('id', imgID);
-                }
-                // Add replaced image's classes to the new SVG
-                if(typeof imgClass !== 'undefined') {
-                    $svg = $svg.attr('class', imgClass+' replaced-svg');
-                }
-
-                // Remove any invalid XML tags as per http://validator.w3.org
-                $svg = $svg.removeAttr('xmlns:a');
-
-                // Replace image with new SVG
-                $img.replaceWith($svg);
-
-            }, 'xml');
-
-        });
     });
 
     $( window ).resize(function() 
@@ -139,11 +115,8 @@
         $(".other_int").height((bigger_col_height / 2) + "px");
     }
 
-    /*$(".think").on("mouseover", function(){
-        this.src = "img/light_up.svg";
-    });
+    function download_cv() {
+        window.location.href = 'docs/CV_BrunoTeixeira.pdf';
+    }
 
-     $(".think").on("mouseleave", function(){
-        this.src = "img/light.svg";
-    });*/
 </script>

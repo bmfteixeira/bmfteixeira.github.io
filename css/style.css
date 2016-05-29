@@ -160,6 +160,11 @@ body > .container > .row > .col-md-12 {
     border-color: #BF5F45;
 }
 
+.dwn-cv:hover {
+    background-color: #BF5F45 !important;
+    border-color: #BF5F45 !important; 
+}
+
 .dwn-cv.show420 {
     margin-top: 20px;
     width: 100%;
@@ -196,6 +201,10 @@ body > .container > .row > .col-md-12 {
     }
 }
 
+.other_int, .contacts {
+    min-height: 150px;
+}
+
 .other_int .section_content{
     text-align: center;
 }
@@ -206,8 +215,24 @@ body > .container > .row > .col-md-12 {
     margin-right: 10px;
 }
 
-.other_int .sports {
-    fill: #94d31b; 
+.content_master {
+    font-family: "open_sansregular";
+}
+
+.content_master.tele {
+    padding-right: 15px;
+}
+
+.content_master.mail {
+    padding-right: 40px;
+}
+
+.content_master.linkedin {
+    color: #D6694B;
+}
+
+.content_master.linkedin:hover a{
+    color: #BF5F45 !important;
 }
 /*********************************
 * journey
@@ -239,7 +264,7 @@ body > .container > .row > .col-md-12 {
 
 .nav>li>a:focus,
 .nav>li>a:hover { 
-    background-color: #45565c;
+    background-color: #5690CA;
 }
 
 .tooltip {
@@ -247,13 +272,13 @@ body > .container > .row > .col-md-12 {
 }
 
 .tooltip .tooltip-inner {
-    background-color: #334045;
+    background-color: #5690CA;
     font-size: 16px;
     font-family: "open_sansregular";
 }
 
 .tooltip .tooltip-arrow {
-    border-top-color: #334045 !important;
+    border-top-color: #5690CA !important;
 }
 
 /**********************************
