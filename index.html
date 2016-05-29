@@ -22,137 +22,128 @@
         <script src="js/script.js"></script>
 	</head>
 	<body>
-            <div id="intro">
-                <div class="overlay"></div>
-                <div class="profile">
-                    <img src="img/profile.jpg" alt="profile img">
-                </div>
-                <div class="text">
-                    <div class="title">
-                        BRUNO TEIXEIRA
-                    </div>
-                    <div class="subtitle">
-                    Web Developer, Porto, Portugal
-                    </div>
-                </div>
-            </div>
+        
+        <div class="intro_bg_opacity"></div>
+        <div class="container content_cont">
+            <div class="row">
+                <div class="personal_intro col-md-12 col-xs-12">
+                   <div class="row">
+                        <div class="profile_pic col-md-3 col-md-offset-3 col-xs-6">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                        <div class="basic_info col-md-6 col-xs-6">
+                            <div class="name">Bruno Teixeira</div>
+                            <div class="age">21 anos</div>
+                            <div class="role">Full Stack Web Developer</div>
 
-            <div id="header">
-                <nav class="navbar navbar-default">
-                    <div class="container">
-                        <ul class="nav nav-bar">
-                            <li>
-                                <a href="">
-                                    <span>Sobre mim</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Capacidades</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span>Experiência</span>
-                                </a>
-                            </li>
-                        </ul> 
+                            <button class="btn dwn-cv hidden420 btn-primary">Download CV</button>
+                        </div>
                     </div>
-                </nav>
-            </div>
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="about_me" class="content">
-                                <div class="section-header">
-                                    <div class="section-icon">
-                                        <img src="img/aboutme.svg" alt="about me img">
-                                    </div>
-                                    <div class="section-title">
-                                        Sobre mim
-                                    </div>
-                                </div>
-                                <div class="section-text">
-                                    Considero-me uma pessoa alegre, calma e dedicada tanto ao trabalho como às pessoas. Procuro sempre apoiar o bom ambiente, pois considero que este é um factor fulcral ao bom desempenho pessoal. Considero ter capacidade crítica e inovadora, apreciando novos desafios e tecnologias. </br></br>
+                        <button class="btn dwn-cv show420 btn-primary">Download CV</button>
+                    <div class="row detailed_info">
 
-                                    Profundo adepto de métodos de desenvolvimento ágeis, procuro sempre definir objectivos e prazos realistas. Procuro desenvolver as minhas competências, principalmente na área de desenvolvimento web, utilizando como recursos tecnologias recentes e inovadoras.
-                                </div>
+                        <div class="about_me col-md-6 col-xs-12">
+                            <div class="section_title">Acerca de mim</div>
+                            <div class="section_content">
+                                <p>Considero-me uma pessoa com elevada capacidade de organização e comunicação, acreditando que no ramo das TI este é um fator importante para o sucesso pessoal e coletivo. Tento ser também o mais coorperante possível sendo que o melhor trabalho em equipa resulta numa melhor solução.</p>
+                                <p>Sou apreciador de metodologias ágeis, procurando definir objetivos curtos, precisos e realistas. Defendo que deve existir sempre uma fase de reflexão sobre uma solução, sendo que existe sempre algo a melhorar e a aprender.</p>
+                                <p>Procuro também adquirir constantemente novas aptidões e capacidades em novas tecnologias e metodologias de trabalho.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div id="extra_info" class="content">
-                                        <div class="section-header">
-                                            <div class="section-icon">
-                                                <img src="img/otherinfo.svg" alt="about me img">
-                                            </div>
-                                            <div class="section-title">
-                                                Outras informações
-                                            </div>
-                                        </div>
-                                        <div class="section-text">
-                                            <div class="highlight">Telemóvel:</div> 913976257 </br>
-                                            <div class="highlight">LinkedIn:</div> <a href="https://www.linkedin.com/in/bmfteixeira">bmfteixeira</a> </br>
-                                            <div class="highlight">E-mail:</div> brunot.teixeira5@gmail.com </br>
-                                        </div>
-                                    </div>
+                        <div class="extra_info col-md-6 col-xs-12">
+                            <div class="other_int col-md-12 col-sm-6 col-xs-12">
+                                <div class="section_title">Outros Interesses</div>
+                                <div class="section_content">
+                                    <img class="sports svg" src="img/ints/sports.svg" data-toggle="tooltip" title="" data-original-title="Desporto !">
+                                    <img class="travel svg" src="img/ints/world.svg" data-toggle="tooltip" title="" data-original-title="Viajar !">
+                                    <img class="music svg" src="img/ints/music.svg" data-toggle="tooltip" title="" data-original-title="Música !">
+                                    <img class="beer svg" src="img/ints/beer.svg" data-toggle="tooltip" title="" data-original-title="Conviver !">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div id="hoobies" class="content">
-                                        <div class="section-header">
-                                            <div class="section-icon">
-                                                <img src="img/hoobies.svg" alt="about me img">
-                                            </div>
-                                            <div class="section-title">
-                                                Outros interesses
-                                            </div>
-                                        </div>
-                                        <div class="section-text">
-                                            <div class="interess-gallery">
-                                                <img class="think" src="img/light.svg"  data-toggle="tooltip" title="Inovar !">
-                                                <img class="learn" src="img/new_tec.svg"  data-toggle="tooltip" title="Explorar novas tecnologias !">
-                                                <img class="sports" src="img/sports.svg"  data-toggle="tooltip" title="Desporto !">
-                                                <img class="sports" src="img/world.svg"  data-toggle="tooltip" title="Viajar !">
-                                                <img class="sports" src="img/game.svg"  data-toggle="tooltip" title="Jogar !">
-                                                <img class="sports" src="img/music.svg"  data-toggle="tooltip" title="Música !">
-                                                 <img class="sports" src="img/beer.svg"  data-toggle="tooltip" title="Beber um copo com amigos !">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                        
+                            <div class="contacts col-md-12 col-sm-6 col-xs-12">
+                                <div class="section_title">Contactos</div>
                             </div>
                         </div>
                     </div>
-                    <div id="skill_set">
-                    </div>
-                    <div id="scholl_set">
-                    </div>
-                    <div id="experience">
-                    </div>
-                    <div id="portfolio">
-                    </div>
+                    
+                    <div class="clear"></div>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="journey col-md-12 col-xs-12">
+                    <div class="studies col-md-6 col-xs-12"></div>
+                    <div class="professional col-md-6 col-xs-12"></div>
+                </div>
 
-           <div id="footer">
-           </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="row">
+                <div class="abilities col-md-12 col-xs-12">
+                    <div class="skills col-md-6 col-xs-12"></div>
+                    <div class="exp col-md-6 col-xs-12"></div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
 	</body>
 </html>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function()
+    {
         $('[data-toggle="tooltip"]').tooltip(); 
+        recalculate_personalInfo_height();
+
+        jQuery('img.svg').each(function(){
+            var $img = jQuery(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            jQuery.get(imgURL, function(data) {
+                // Get the SVG tag, ignore the rest
+                var $svg = jQuery(data).find('svg');
+
+                // Add replaced image's ID to the new SVG
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                // Add replaced image's classes to the new SVG
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                // Remove any invalid XML tags as per http://validator.w3.org
+                $svg = $svg.removeAttr('xmlns:a');
+
+                // Replace image with new SVG
+                $img.replaceWith($svg);
+
+            }, 'xml');
+
+        });
     });
 
-    $(".think").on("mouseover", function(){
+    $( window ).resize(function() 
+    {
+        recalculate_personalInfo_height();
+    });
+
+    function recalculate_personalInfo_height()
+    {
+        var bigger_col_height = $(".about_me").height();
+        $(".contacts").height((bigger_col_height / 2) + "px");
+        $(".other_int").height((bigger_col_height / 2) + "px");
+    }
+
+    /*$(".think").on("mouseover", function(){
         this.src = "img/light_up.svg";
     });
 
      $(".think").on("mouseleave", function(){
         this.src = "img/light.svg";
-    });
+    });*/
 </script>
