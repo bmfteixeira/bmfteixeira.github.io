@@ -288,13 +288,39 @@ body > .container > .row > .col-md-12 {
 }
 
 @media screen and (max-width: 767px) {
-    .professional {
+    .skills {
         margin-top: 40px;
     }
 
     .exp {
         margin-top: 40px;
     }
+}
+
+.skills .section_title {
+    margin-bottom: 30px;
+}
+
+.skills .skill {
+    margin-top: 20px;
+}
+
+.skills .tecno {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+}
+
+.skills .progress {
+    display: inline-block;
+    margin-bottom: 0px !important;
+    width: 65%;
+    float: right;
+    background-color: #D1E8F7;
+}
+
+.skills .progress .progress-bar {
+    background-color: #D6694B;
 }
 
 /*********************************

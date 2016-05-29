@@ -7,8 +7,7 @@
         <meta name="description" content="Apresentation Page">
         <meta name="author" content="Bruno Teixeira">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- FONTS -->
+        <meta http-equiv="cache-control" content="private">
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,9 +16,6 @@
 
         <!-- JavaScripts -->
         <script src="js/vendor/jquery-2.1.4.min.js"></script>
-        <script src="js/vendor/modernizr.min.js"></script>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
 	</head>
 	<body>
         
@@ -46,8 +42,8 @@
                             <div class="section_title">Acerca de mim</div>
                             <div class="section_content">
                                 <p>Considero-me uma pessoa com elevada capacidade de organização e comunicação, acreditando que no ramo das TI este é um fator importante para o sucesso pessoal e coletivo. Tento ser também o mais coorperante possível sendo que o melhor trabalho em equipa resulta numa melhor solução.</p>
-                                <p>Sou apreciador de metodologias ágeis, procurando definir objetivos curtos, precisos e realistas. Defendo que deve existir sempre uma fase de reflexão sobre uma solução, sendo que existe sempre algo a melhorar e a aprender.</p>
-                                <p>Procuro também adquirir constantemente novas aptidões e capacidades em novas tecnologias e metodologias de trabalho.</p>
+                                <p>Sou apreciador de metodologias ágeis, procurando definir objetivos curtos, precisos e realistas. Defendo que deve existir sempre uma fase de reflexão sobre uma solução, sendo que existe sempre algo a melhorar e a aprender. Valorizo aspetos como a automatização na construção de software e a utilização de boas práticas.</p>
+                                <p>Procuro também adquirir constantemente novas aptidões em novas tecnologias e metodologias de trabalho.</p>
                             </div>
                         </div>
                         <div class="extra_info col-md-6 col-xs-12">
@@ -104,6 +100,62 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="skills col-md-6 col-sm-6 col-xs-12">
+                            <div class="section_title">Capacidades</div>
+                            <div class="section_content">
+                                <div class="skill">
+                                    <div class="tecno">PHP</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="tecno">JavaScript</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="tecno">HTML5</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="tecno">CSS3</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="tecno">Web Services</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill">
+                                    <div class="tecno">SQL</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="abilities col-md-12 col-xs-12">
                         <div class="professional col-md-6 col-sm-6 col-xs-12">
                             <div class="section_title">Percurso Profissional</div>
                             <div class="section_content">
@@ -112,15 +164,6 @@
                                     <div class="description">FYI</div>
                                     <div class="time">Mar 2015 - Actual</div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="abilities col-md-12 col-xs-12">
-                        <div class="skills col-md-6 col-sm-6 col-xs-12">
-                            <div class="section_title">Capacidades</div>
-                            <div class="section_content">
-                                
                             </div>
                         </div>
                         <div class="exp col-md-6 col-sm-6 col-xs-12">
@@ -149,6 +192,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="future col-md-6 col-sm-6 col-xs-12">
+
+                        </div>
                     </div>
 
                     <div class="clear"></div>
@@ -157,6 +203,7 @@
         </div>
 	</body>
 </html>
+<script src="js/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -171,9 +218,17 @@
 
     function recalculate_personalInfo_height()
     {
-        var bigger_col_height = $(".about_me").height();
-        $(".contacts").height((bigger_col_height / 2) + "px");
-        $(".other_int").height((bigger_col_height / 2) + "px");
+        if($(window).width() > 768)
+        {
+            var bigger_col_height = $(".about_me").height();
+            $(".contacts").height((bigger_col_height / 2) + "px");
+            $(".other_int").height((bigger_col_height / 2) + "px");
+        }
+        else
+        {
+            $(".contacts").height("150px");
+            $(".other_int").height("150px");
+        }
     }
 
     function download_cv() {
