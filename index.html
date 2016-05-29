@@ -35,9 +35,8 @@
                             <div class="name">Bruno Teixeira</div>
                             <div class="age">21 anos</div>
                             <div class="role">Full Stack Web Developer</div>
-                            <form method="get" action="docs/CV_BrunoTeixeira.pdf">
-                                <button class="btn dwn-cv hidden420 btn-primary">Download CV</button>
-                            </form>
+
+                            <button class="btn dwn-cv hidden420 btn-primary" onclick="download_cv()">Currículo</button>
                         </div>
                     </div>
                         <button class="btn dwn-cv show420 btn-primary">Download CV</button>
@@ -116,8 +115,8 @@
         $(".other_int").height((bigger_col_height / 2) + "px");
     }
 
-    /*function download_cv() {
+    function download_cv() {
         window.location.href = 'docs/CV_BrunoTeixeira.pdf';
-    }*/
+    }
 
 </script>
