@@ -67,8 +67,31 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
+                        <div class="col-md-12 future">
+                            <div class="ambicion col-md-6 col-xs-12">
+                                <div class="section_title">Ambição Futura</div>
+                                    <div class="section_content">
+                                        <ul>
+                                            <li>Trabalhar em ambientes multi culturais, onde seja privilegiado o uso de metodologias ágeis </li>
+                                            <li>Participação em projetos com elevado nível de exigência</li>
+                                            <li>Ambiente de desenvolvimento dinãmico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="my_contribution col-md-6 col-xs-12">
+                                    <div class="section_title">O meu contributo</div>
+                                    <div class="section_content">
+                                        <ul>
+                                            <li>Máximo empenho e dedição</li>
+                                            <li>Espírito crítico e cooperante</li>
+                                            <li>Elevada capacidade de comunicação e organização</li>
+                                            <li>Uma boa dose de positivismo e alegria :)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -193,12 +216,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="future col-md-6 col-sm-6 col-xs-12">
-
-                        </div>
                     </div>
 
                     <div class="clear"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="future col-md-12">
+
                 </div>
             </div>
         </div>
@@ -233,7 +258,10 @@
     }
 
     function download_cv() {
-        window.open('https://bmfteixeira.github.io/docs/CV_BrunoTeixeira.pdf', '_blank');
+        if($(window).width() > 1024)
+            window.open('https://bmfteixeira.github.io/docs/CV_BrunoTeixeira.pdf', '_blank');
+        else
+            window.location = "https://bmfteixeira.github.io/docs/CV_BrunoTeixeira.pdf";
     }
 
 </script>
