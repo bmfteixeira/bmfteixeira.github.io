@@ -1,0 +1,22 @@
+{
+  "name": "bmfteixeira",
+  "version": "1.0.0",
+  "description": "My Online CV!",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmfteixeira/bmfteixeira.github.io.git"
+  },
+  "author": "Bruno Teixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmfteixeira/bmfteixeira.github.io/issues"
+  },
+  "homepage": "https://github.com/bmfteixeira/bmfteixeira.github.io#readme"
+}
