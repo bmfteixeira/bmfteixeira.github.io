@@ -1,0 +1,8 @@
+{
+  "rules" : {
+    "comma-dangle": [2, "only-multiline"],
+    "no-use-before-define": ["error", {"functions": false}],
+    "object-shorthand": 0,
+    "no-mixed-operators": 0
+  }
+}

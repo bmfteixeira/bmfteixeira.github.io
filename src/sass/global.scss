@@ -1,0 +1,146 @@
+@import './bootstrap/reset';
+@import './bootstrap/bootstrap-responsive';
+
+@import 'common/typography.scss';
+@import 'common/sections.scss';
+@import 'common/variables.scss';
+@import 'common/mixins.scss';
+
+@import 'layout/loader.scss';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  color: $primary-text;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.container:after, .container:before {
+    content: " ";
+    display: table;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background-image: url('./images/general/background.jpeg');
+  background-size: cover;
+  background-position: center center;
+
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter iâ€¦0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  filter: grayscale(100%);
+  opacity: .8;
+  transition: 200ms all ease;
+
+  @include image-2x-cover('./images/general/background@2x.jpeg');
+  
+  &.no-gray {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter iâ€¦='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+    filter: none;
+    filter: grayscale(0);
+  }
+}
+
+.about {
+  position: relative;
+  display: block;
+
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+
+  &-wrapper {
+    position: relative;
+    display: block;
+
+    height: 100vh;
+    border-left: 1px solid rgba(0,0,0,0.5);
+    background: white;
+    box-shadow: -9px 6px 30px rgba(0,0,0,0.3);
+  }
+
+  &__avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+
+    background-size: cover;
+    background-image: url('./images/about-me/avatar.jpg');
+    border-radius: 50%;
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter iâ€¦0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    filter: gray;
+    filter: grayscale(100%);
+    transition: 200ms all ease;
+    will-change: transform;
+    backface-visibility: hidden;
+
+    &.no-gray {
+      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter iâ€¦='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+      filter: none;
+      filter: grayscale(0);
+    }
+
+    @media(min-width: $screen-sm) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .typed-cursor {
+    display: none;
+  }
+
+  &__intro {
+    position: relative;
+    display: block;
+
+    margin-top: 50px;
+    
+    font-size: 24px;
+    color: $primary-text;
+    text-align: center;
+
+    span {
+      display: inline-block;
+    } 
+  }
+
+  .intro-name {
+    color: $primary-text;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 38px;
+    letter-spacing: 1.2px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+}
