@@ -11,7 +11,6 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
   color: $primary-text;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -67,12 +66,14 @@ a, a:hover, a:active, a:focus {
   transform: translate3d(-50%,-50%,0);
 
   &-wrapper {
-    position: relative;
+    position: fixed;
     display: block;
+    right: 0px;
 
     height: 100vh;
+    
     border-left: 1px solid rgba(0,0,0,0.5);
-    background: white;
+    background-color: rgba(256, 256, 256, 0.8);
     box-shadow: -9px 6px 30px rgba(0,0,0,0.3);
   }
 

@@ -30,6 +30,7 @@ export default (() => {
   loadingTL
   .set([aboutAvatar, aboutTitle, aboutSubTitle], {
     opacity: 0,
+    display: 'block',
   })
   .set(aboutAvatar, {
     y:30,
